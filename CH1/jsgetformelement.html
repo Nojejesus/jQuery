@@ -1,0 +1,26 @@
+<!--题外活动 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" name="form">
+        <input type="text" name="user" value="我的名字">
+        <input type="password" name="pass" value="">
+        <input type="submit" onclick="return check();">
+    </form>
+    <script>
+        function check(){
+            var fm = document.forms[0];  //如果只有一个form，可以写为 fm = document.form;
+            alert(fm.method);
+            alert(fm.user.value);
+            alert(fm.pass.value);
+        }
+    </script>
+</body>
+</html>
